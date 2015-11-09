@@ -27,6 +27,7 @@
 		7D5858761BEB4D1D00A7CA2B /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5858751BEB4D1D00A7CA2B /* TabBarViewController.m */; };
 		7D5858781BEB8FA300A7CA2B /* ios-backImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D5858771BEB8FA300A7CA2B /* ios-backImage.jpg */; };
 		7DDF160F1BF06D4A009DDCD3 /* icon_meals.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DDF160E1BF06D4A009DDCD3 /* icon_meals.png */; };
+		7DDF16141BF08750009DDCD3 /* Triangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDF16131BF08750009DDCD3 /* Triangle.m */; };
 		7DE5C9E91BE9E7E0009484B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE5C9E81BE9E7E0009484B4 /* main.m */; };
 		7DE5C9EC1BE9E7E0009484B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE5C9EB1BE9E7E0009484B4 /* AppDelegate.m */; };
 		7DE5C9F21BE9E7E0009484B4 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE5C9F11BE9E7E0009484B4 /* SecondViewController.m */; };
@@ -76,6 +77,8 @@
 		7D5858751BEB4D1D00A7CA2B /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		7D5858771BEB8FA300A7CA2B /* ios-backImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ios-backImage.jpg"; sourceTree = "<group>"; };
 		7DDF160E1BF06D4A009DDCD3 /* icon_meals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_meals.png; sourceTree = "<group>"; };
+		7DDF16121BF08750009DDCD3 /* Triangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Triangle.h; sourceTree = "<group>"; };
+		7DDF16131BF08750009DDCD3 /* Triangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Triangle.m; sourceTree = "<group>"; };
 		7DE5C9E31BE9E7E0009484B4 /* Food Courts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food Courts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DE5C9E71BE9E7E0009484B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DE5C9E81BE9E7E0009484B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -171,6 +174,24 @@
 			name = "Food Sub Menu";
 			sourceTree = "<group>";
 		};
+		7DDF16111BF08720009DDCD3 /* Draw Triangle */ = {
+			isa = PBXGroup;
+			children = (
+				7DDF16121BF08750009DDCD3 /* Triangle.h */,
+				7DDF16131BF08750009DDCD3 /* Triangle.m */,
+			);
+			name = "Draw Triangle";
+			sourceTree = "<group>";
+		};
+		7DDF16151BF0B214009DDCD3 /* Selected Dish */ = {
+			isa = PBXGroup;
+			children = (
+				7DE5C9F01BE9E7E0009484B4 /* SecondViewController.h */,
+				7DE5C9F11BE9E7E0009484B4 /* SecondViewController.m */,
+			);
+			name = "Selected Dish";
+			sourceTree = "<group>";
+		};
 		7DE5C9DA1BE9E7E0009484B4 = {
 			isa = PBXGroup;
 			children = (
@@ -247,8 +268,6 @@
 		7DE5CA131BE9EC03009484B4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7DE5C9F01BE9E7E0009484B4 /* SecondViewController.h */,
-				7DE5C9F11BE9E7E0009484B4 /* SecondViewController.m */,
 				7D58585D1BEA158500A7CA2B /* RestaurantDetailController.h */,
 				7D58585E1BEA158600A7CA2B /* RestaurantDetailController.m */,
 			);
@@ -259,14 +278,16 @@
 		7DE5CA141BE9EC20009484B4 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7D58586F1BEB4AFC00A7CA2B /* Restaurant List */,
-				7D5858701BEB4B1400A7CA2B /* Food Menu */,
-				7D5858711BEB4B2D00A7CA2B /* Food Sub Menu */,
 				7DE5CA151BE9EC5E009484B4 /* CustomTableViewCell.h */,
 				7DE5CA161BE9EC5E009484B4 /* CustomTableViewCell.m */,
 				7DE5CA171BE9EC5E009484B4 /* CustomTableViewCell.xib */,
 				7D5858741BEB4D1D00A7CA2B /* TabBarViewController.h */,
 				7D5858751BEB4D1D00A7CA2B /* TabBarViewController.m */,
+				7DDF16111BF08720009DDCD3 /* Draw Triangle */,
+				7D58586F1BEB4AFC00A7CA2B /* Restaurant List */,
+				7D5858701BEB4B1400A7CA2B /* Food Menu */,
+				7D5858711BEB4B2D00A7CA2B /* Food Sub Menu */,
+				7DDF16151BF0B214009DDCD3 /* Selected Dish */,
 			);
 			name = View;
 			path = ..;
@@ -398,6 +419,7 @@
 				7D5858621BEA256E00A7CA2B /* FoodMenuTableViewController.m in Sources */,
 				7D5858651BEA274600A7CA2B /* FoodMenuInfo.m in Sources */,
 				7D58585F1BEA158600A7CA2B /* RestaurantDetailController.m in Sources */,
+				7DDF16141BF08750009DDCD3 /* Triangle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
