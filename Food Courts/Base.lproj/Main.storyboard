@@ -28,7 +28,7 @@
                             <outlet property="delegate" destination="xBM-aC-P6T" id="pgh-3H-uBJ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="List of Restaurants" id="nb2-YN-YX1"/>
+                    <navigationItem key="navigationItem" id="nb2-YN-YX1"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="restaurantListTableview" destination="wrg-cS-bC3" id="Oja-3K-gSP"/>
@@ -62,7 +62,7 @@
                             <outlet property="delegate" destination="xtP-9Q-cSN" id="SRo-NC-FS6"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Food Menu" id="Gt9-Jr-mL0" userLabel="Food Menu"/>
+                    <navigationItem key="navigationItem" id="Gt9-Jr-mL0" userLabel="Food Menu"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="foodMenuTableView" destination="2Av-DT-S7S" id="h4M-tY-ztp"/>
@@ -118,6 +118,7 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qQA-Qy-suy" customClass="Triangle">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="338"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thank you for choosing:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fa-Er-9FG">
                                 <rect key="frame" x="44" y="305" width="286" height="21"/>
@@ -137,9 +138,16 @@
                     <tabBarItem key="tabBarItem" title="Selected Dish" image="icon_meals.png" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="labelToShowFoodItem" destination="JgJ-tC-9WV" id="dLu-vz-96C"/>
+                        <outlet property="smileyView" destination="qQA-Qy-suy" id="7pB-wa-qC3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="cmi-XY-UQd">
+                    <connections>
+                        <action selector="handleSingleTap:" destination="8rJ-Kc-sve" id="aqm-vh-XTM"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="LH3-R7-Lvg"/>
             </objects>
             <point key="canvasLocation" x="489.5" y="424.5"/>
         </scene>
@@ -166,7 +174,7 @@
         <!--Nearby Restaurants-->
         <scene sceneID="pqk-Bl-pmq">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="A9U-LE-vpL" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="RestaurantListNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="A9U-LE-vpL" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Nearby Restaurants" image="restaurant_icon.png" id="GvL-Lb-LQC"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>

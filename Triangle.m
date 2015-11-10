@@ -10,9 +10,11 @@
 
 @implementation Triangle
 
-
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
+/**
+ *  Method to draw a smiley and write a String - WELCOME from CGContextRef
+ *
+ *  @param rect defines the x-y postion, height and width of CGContextRef
+ */
 - (void)drawRect:(CGRect)rect {
     // Drawing code
     
@@ -35,6 +37,18 @@
     CGContextAddArc(context, 180, 210, 30, 0, M_PI, FALSE);
     CGContextStrokePath(context);
     
+    
+    CGRect viewBounds = self.bounds;
+    CGContextTranslateCTM(context, 0, viewBounds.size.height);
+    CGContextScaleCTM(context, 1, -1);
+    CGContextSetRGBFillColor(context, 0.0, 1.0, 0.0, 1.0);
+    CGContextSetLineWidth(context, 2.0);
+    CGContextSelectFont(context, "Helvetica", 10.0, kCGEncodingMacRoman);
+    CGContextSetCharacterSpacing(context, 1.7);
+    CGContextSetTextDrawingMode(context, kCGTextFill);
+    CGContextShowTextAtPoint(context, 150.0, 250.0, "WELCOME", 7);
+    
+    
     //    UIBezierPath *trianglePath = [[UIBezierPath alloc]init];
     //    [trianglePath moveToPoint:CGPointMake(125,125)];
     //    [trianglePath addLineToPoint:CGPointMake(220,220)];
@@ -44,9 +58,8 @@
     //    [[UIColor redColor] setStroke];
     //    [trianglePath fill];
     //    [trianglePath stroke];
-
-    
 }
+
 
 
 @end

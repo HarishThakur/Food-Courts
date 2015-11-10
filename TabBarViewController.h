@@ -7,11 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-//#import "RestaurantListTableViewController.h"
 
-@interface TabBarViewController : UITabBarController
-
-//@property (strong,nonatomic) NSNumber *setFlag;
-//@property RestaurantListTableViewController *restaurantTVC;
+@interface TabBarViewController : UITabBarController<UITabBarControllerDelegate>
 
 @end

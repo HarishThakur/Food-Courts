@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ *  Property set for label to dhoew food menu 
+ */
 @interface SecondViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UILabel *labelToShowFoodItem;
 
+@property (weak, nonatomic) IBOutlet UILabel *labelToShowFoodItem;
 @property (strong,nonatomic) NSString *foodItemName;
 
 @end

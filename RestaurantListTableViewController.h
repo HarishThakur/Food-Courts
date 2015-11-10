@@ -12,10 +12,13 @@
 #import "RestaurantDetailController.h"
 #import "FoodMenuTableViewController.h"
 
+/**
+ *  Properties set for table view, restaurantDetailController and restaurantInfo
+ */
 @interface RestaurantListTableViewController : UITableViewController
 
 @property (strong, nonatomic) IBOutlet UITableView *restaurantListTableview;
 @property RestaurantDetailController *restaurantDetailController;
 @property RestaurantInfo *restaurantInfo;
-@property (nonatomic, assign) BOOL selectedDishtab;
+
 @end

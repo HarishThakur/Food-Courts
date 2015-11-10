@@ -12,11 +12,13 @@
 #import "RestaurantDetailController.h"
 #import "FoodSubMenuTableViewController.h"
 
+/**
+ *  Properties set for table view, restaurantDetailController and FoodMenuInfo
+ */
 @interface FoodMenuTableViewController : UITableViewController
 
 @property (strong, nonatomic) IBOutlet UITableView *foodMenuTableView;
 @property RestaurantDetailController *restaurantDetailController;
 @property FoodMenuInfo *foodMenu;
-@property int rowIndex;
 
 @end

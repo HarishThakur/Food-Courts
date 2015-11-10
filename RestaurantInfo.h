@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ *  Properties set for restaurant name and image
+ */
 @interface RestaurantInfo : NSObject
 
 @property (strong,nonatomic) NSString *restaurantName;

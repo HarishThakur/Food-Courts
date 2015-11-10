@@ -11,6 +11,11 @@
 
 @implementation RestaurantDetailController
 
+/**
+ *  initialized array for list of Restaurants and list of food menu
+ *
+ *  @return self
+ */
 -(id) init {
     _arrayForRestaurantDetails = [[NSMutableArray alloc]init];
     _arrayForFoodMenu = [[NSMutableArray alloc]init];
@@ -18,46 +23,51 @@
     return self;
 }
 
+/**
+ *  Method to get list of Restaurant names and images
+ *
+ *  @return array of Restaurant names and images
+ */
 -(NSMutableArray *)getRestaurantInfo {
     for(int i = 1; i <= 8; i++) {
         _restaurantInfo = [[RestaurantInfo alloc]init];
         if (i==1) {
-            _restaurantInfo.restaurantName = [NSString stringWithFormat:@"KFC"];
+            _restaurantInfo.restaurantName = NSLocalizedString(@"KFC", nil); // [NSString stringWithFormat:@"KFC"];
             _restaurantInfo.restaurantImage = [NSString stringWithFormat:@"KFC_logo.png"];
             [_arrayForRestaurantDetails addObject:_restaurantInfo];
         }
         else if (i==2) {
-            _restaurantInfo.restaurantName = [NSString stringWithFormat:@"McDonalods"];
+            _restaurantInfo.restaurantName = NSLocalizedString(@"McDonalods", nil); //  [NSString stringWithFormat:@"McDonalods"];
             _restaurantInfo.restaurantImage = [NSString stringWithFormat:@"mcD_logo.png"];
             [_arrayForRestaurantDetails addObject:_restaurantInfo];
         }
         else if (i==3) {
-            _restaurantInfo.restaurantName = [NSString stringWithFormat:@"Dominos"];
+            _restaurantInfo.restaurantName = NSLocalizedString(@"Dominos", nil); // [NSString stringWithFormat:@"Dominos"];
             _restaurantInfo.restaurantImage = [NSString stringWithFormat:@"dominos_logo.png"];
             [_arrayForRestaurantDetails addObject:_restaurantInfo];
         }
         else if (i==4) {
-            _restaurantInfo.restaurantName = [NSString stringWithFormat:@"Subway"];
+            _restaurantInfo.restaurantName = NSLocalizedString(@"Subway", nil); // [NSString stringWithFormat:@"Subway"];
             _restaurantInfo.restaurantImage = [NSString stringWithFormat:@"subway_logo.png"];
             [_arrayForRestaurantDetails addObject:_restaurantInfo];
         }
         else if (i==5) {
-            _restaurantInfo.restaurantName = [NSString stringWithFormat:@"Biryani Pot"];
+            _restaurantInfo.restaurantName = NSLocalizedString(@"Biryani Pot", nil); // [NSString stringWithFormat:@"Biryani Pot"];
             _restaurantInfo.restaurantImage = [NSString stringWithFormat:@"biryaniPot_logo.png"];
             [_arrayForRestaurantDetails addObject:_restaurantInfo];
         }
         else if (i==6) {
-            _restaurantInfo.restaurantName = [NSString stringWithFormat:@"Mast Kalander"];
+            _restaurantInfo.restaurantName = NSLocalizedString(@"Mast Kalander", nil); // [NSString stringWithFormat:@"Mast Kalander"];
             _restaurantInfo.restaurantImage = [NSString stringWithFormat:@"mastKalander_logo.png"];
             [_arrayForRestaurantDetails addObject:_restaurantInfo];
         }
         else if (i==7) {
-            _restaurantInfo.restaurantName = [NSString stringWithFormat:@"The Village"];
+            _restaurantInfo.restaurantName = NSLocalizedString(@"The Village", nil); // [NSString stringWithFormat:@"The Village"];
             _restaurantInfo.restaurantImage = [NSString stringWithFormat:@"village_logo.png"];
             [_arrayForRestaurantDetails addObject:_restaurantInfo];
         }
         else if (i==8) {
-            _restaurantInfo.restaurantName = [NSString stringWithFormat:@"Empire Restaurant"];
+            _restaurantInfo.restaurantName = NSLocalizedString(@"Empire Restaurant", nil); // [NSString stringWithFormat:@"Empire Restaurant"];
             _restaurantInfo.restaurantImage = [NSString stringWithFormat:@"empireRestaurant_logo.png"];
             [_arrayForRestaurantDetails addObject:_restaurantInfo];
         }
@@ -65,21 +75,26 @@
     return _arrayForRestaurantDetails;
 }
 
+/**
+ *  Method to get list of Food Menu and images
+ *
+ *  @return array of Food Menu and images
+ */
 -(NSMutableArray *)getFoodMenu {
     for (int i = 1; i<=3; i++) {
         _foodMenu = [[FoodMenuInfo alloc]init];
         if (i==1) {
-            _foodMenu.menuList = [NSString stringWithFormat:@"Starters"];
+            _foodMenu.menuList = NSLocalizedString(@"Starters", nil); // [NSString stringWithFormat:@"Starters"];
             _foodMenu.menuImage = [NSString stringWithFormat:@"starters_logo.png"];
             [_arrayForFoodMenu addObject:_foodMenu];
         }
         else if (i==2) {
-            _foodMenu.menuList = [NSString stringWithFormat:@"Main Course"];
+            _foodMenu.menuList = NSLocalizedString(@"Main Course", nil); // [NSString stringWithFormat:@"Main Course"];
             _foodMenu.menuImage = [NSString stringWithFormat:@"mainCourse_logo.png"];
             [_arrayForFoodMenu addObject:_foodMenu];
         }
         else if (i==3) {
-            _foodMenu.menuList = [NSString stringWithFormat:@"Beverages"];
+            _foodMenu.menuList = NSLocalizedString(@"Beverages", nil); // [NSString stringWithFormat:@"Beverages"];
             _foodMenu.menuImage = [NSString stringWithFormat:@"beverages_logo.png"];
             [_arrayForFoodMenu addObject:_foodMenu];
         }
@@ -87,6 +102,11 @@
     return _arrayForFoodMenu;
 }
 
+/**
+ *  Method to get list of Food sub Menu - Starter
+ *
+ *  @return array of Food sub Menu - Starter
+ */
 -(NSMutableArray *)getStartersMenu {
     _arrayForFoodSubMenu = [[NSMutableArray alloc]init];
     for (int i = 1; i<=7; i++) {
@@ -122,6 +142,11 @@
     return _arrayForFoodSubMenu;
 }
 
+/**
+ *  Method to get list of Food sub Menu - Main Course
+ *
+ *  @return array of Food sub Menu - Main Course
+ */
 -(NSMutableArray *)getMainCourseMenu {
     _arrayForFoodSubMenu = [[NSMutableArray alloc]init];
     for (int i = 1; i<=7; i++) {
@@ -157,6 +182,11 @@
     return _arrayForFoodSubMenu;
 }
 
+/**
+ *  Method to get list of Food sub Menu - Beverages
+ *
+ *  @return array of Food sub Menu - Beverages
+ */
 -(NSMutableArray *)getBeveragesMenu {
     _arrayForFoodSubMenu = [[NSMutableArray alloc]init];
     for (int i = 1; i<=5; i++) {

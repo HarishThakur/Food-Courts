@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ *  Properties set for Food Menu and Sub Menu
+ */
 @interface FoodMenuInfo : NSObject
 
 @property (strong,nonatomic) NSString *menuList;

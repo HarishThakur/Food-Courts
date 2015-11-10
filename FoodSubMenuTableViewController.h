@@ -12,6 +12,9 @@
 #import "TabBarViewController.h"
 #import "RestaurantListTableViewController.h"
 
+/**
+ *  Properties set for table view, restaurantDetailController and FoodMenuInfo
+ */
 @interface FoodSubMenuTableViewController : UITableViewController
 
 @property FoodMenuInfo *foodMenu;
