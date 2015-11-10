@@ -112,30 +112,30 @@
     for (int i = 1; i<=7; i++) {
         _foodMenu = [[FoodMenuInfo alloc]init];
         if (i==1) {
-            _foodMenu.staters = [NSString stringWithFormat:@"French Fries"];
+            _foodMenu.staters = NSLocalizedString(@"French Fries", nil); // [NSString stringWithFormat:@"French Fries"];
             [_arrayForFoodSubMenu addObject:_foodMenu];
         }
         else if (i==2) {
-            _foodMenu.staters = [NSString stringWithFormat:@"Paneer Tikka"];
+            _foodMenu.staters = NSLocalizedString(@"Paneer Tikka", nil); // [NSString stringWithFormat:@"Paneer Tikka"];
             [_arrayForFoodSubMenu addObject:_foodMenu];
         }
         else if (i==3) {
-            _foodMenu.staters = [NSString stringWithFormat:@"Chicken Snacker"];
+            _foodMenu.staters = NSLocalizedString(@"Chicken Snacker", nil); // [NSString stringWithFormat:@"Chicken Snacker"];
             [_arrayForFoodSubMenu addObject:_foodMenu];
         }
         else if(i==4) {
-            _foodMenu.staters = [NSString stringWithFormat:@"Crispy Chicken"];
+            _foodMenu.staters = NSLocalizedString(@"Crispy Chicken", nil); // [NSString stringWithFormat:@"Crispy Chicken"];
             [_arrayForFoodSubMenu addObject:_foodMenu];
         }
         else if (i==5) {
-            _foodMenu.staters = [NSString stringWithFormat:@"Grilled Chicken"];
+            _foodMenu.staters = NSLocalizedString(@"Grilled Chicken", nil); // [NSString stringWithFormat:@"Grilled Chicken"];
             [_arrayForFoodSubMenu addObject:_foodMenu];
         } else if (i==6) {
-            _foodMenu.staters = [NSString stringWithFormat:@"Chicken Tandoori"];
+            _foodMenu.staters = NSLocalizedString(@"Chicken Tandoori", nil); // [NSString stringWithFormat:@"Chicken Tandoori"];
             [_arrayForFoodSubMenu addObject:_foodMenu];
         }
         else if (i==7) {
-            _foodMenu.staters = [NSString stringWithFormat:@"Chilly Paneer"];
+            _foodMenu.staters = NSLocalizedString(@"Chilly Paneer", nil); // [NSString stringWithFormat:@"Chilly Paneer"];
             [_arrayForFoodSubMenu addObject:_foodMenu];
         }
     }
@@ -152,30 +152,30 @@
     for (int i = 1; i<=7; i++) {
         _foodMenu = [[FoodMenuInfo alloc]init];
         if (i==1) {
-            _foodMenu.mainCourse = [NSString stringWithFormat:@"Fried Rice"];
+            _foodMenu.mainCourse = NSLocalizedString(@"Fried Rice", nil); // [NSString stringWithFormat:@"Fried Rice"];
             [_arrayForFoodSubMenu addObject:_foodMenu];
         }
         else if (i==2) {
-            _foodMenu.mainCourse = [NSString stringWithFormat:@"Pulaw"];
+            _foodMenu.mainCourse = NSLocalizedString(@"Pulaw", nil); // [NSString stringWithFormat:@"Pulaw"];
             [_arrayForFoodSubMenu addObject:_foodMenu];
         }
         else if (i==3) {
-            _foodMenu.mainCourse = [NSString stringWithFormat:@"Daal Tadka"];
+            _foodMenu.mainCourse = NSLocalizedString(@"Daal Tadka", nil); // [NSString stringWithFormat:@"Daal Tadka"];
             [_arrayForFoodSubMenu addObject:_foodMenu];
         }
         else if(i==4) {
-            _foodMenu.mainCourse = [NSString stringWithFormat:@"Punjabi Chicken"];
+            _foodMenu.mainCourse = NSLocalizedString(@"Punjabi Chicken", nil); // [NSString stringWithFormat:@"Punjabi Chicken"];
             [_arrayForFoodSubMenu addObject:_foodMenu];
         }
         else if (i==5) {
-            _foodMenu.mainCourse = [NSString stringWithFormat:@"Aalu Gobhi"];
+            _foodMenu.mainCourse = NSLocalizedString(@"Aalu Gobhi", nil); // [NSString stringWithFormat:@"Aalu Gobhi"];
             [_arrayForFoodSubMenu addObject:_foodMenu];
         } else if (i==6) {
-            _foodMenu.mainCourse = [NSString stringWithFormat:@"Tandoori Roti"];
+            _foodMenu.mainCourse = NSLocalizedString(@"Tandoori Roti", nil); // [NSString stringWithFormat:@"Tandoori Roti"];
             [_arrayForFoodSubMenu addObject:_foodMenu];
         }
         else if (i==7) {
-            _foodMenu.mainCourse = [NSString stringWithFormat:@"Phulka"];
+            _foodMenu.mainCourse = NSLocalizedString(@"Phulka", nil); // [NSString stringWithFormat:@"Phulka"];
             [_arrayForFoodSubMenu addObject:_foodMenu];
         }
     }
@@ -192,23 +192,23 @@
     for (int i = 1; i<=5; i++) {
         _foodMenu = [[FoodMenuInfo alloc]init];
         if (i==1) {
-            _foodMenu.beverages = [NSString stringWithFormat:@"Cold Drinks"];
+            _foodMenu.beverages = NSLocalizedString(@"Cold Drinks", nil); // [NSString stringWithFormat:@"Cold Drinks"];
             [_arrayForFoodSubMenu addObject:_foodMenu];
         }
         else if (i==2) {
-            _foodMenu.beverages = [NSString stringWithFormat:@"Masala Cold Drink"];
+            _foodMenu.beverages = NSLocalizedString(@"Masala Cold Drink", nil); // [NSString stringWithFormat:@"Masala Cold Drink"];
             [_arrayForFoodSubMenu addObject:_foodMenu];
         }
         else if (i==3) {
-            _foodMenu.beverages = [NSString stringWithFormat:@"Lassi"];
+            _foodMenu.beverages = NSLocalizedString(@"Lassi", nil); // [NSString stringWithFormat:@"Lassi"];
             [_arrayForFoodSubMenu addObject:_foodMenu];
         }
         else if(i==4) {
-            _foodMenu.beverages = [NSString stringWithFormat:@"Butter Milk"];
+            _foodMenu.beverages = NSLocalizedString(@"Butter Milk", nil); // [NSString stringWithFormat:@"Butter Milk"];
             [_arrayForFoodSubMenu addObject:_foodMenu];
         }
         else if (i==5) {
-            _foodMenu.beverages = [NSString stringWithFormat:@"Jaljeera"];
+            _foodMenu.beverages = NSLocalizedString(@"Jaljeera", nil); // [NSString stringWithFormat:@"Jaljeera"];
             [_arrayForFoodSubMenu addObject:_foodMenu];
         }
     }
