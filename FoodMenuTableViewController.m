@@ -16,6 +16,7 @@
 
 @implementation FoodMenuTableViewController
 
+#pragma mark - viewDidLoad
 /**
  *  Initialized the controllers
  *  Registered nib for CustomTableViewCell
@@ -48,6 +49,7 @@
     return [_foodMenuList count];
 }
 
+#pragma mark - cellForRowAtIndexPath
 /**
  *  Method to return CustomTableViewCell with food menu and images
  *
@@ -71,6 +73,7 @@
     return cell;
 }
 
+#pragma mark - didSelectRowAtIndexPath
 /**
  *  Method to push this view to FoodSubMenuTableViewController and pass the rowIndex
  *

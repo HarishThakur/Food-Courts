@@ -10,6 +10,7 @@
 
 @implementation Triangle
 
+#pragma mark - drawRect
 /**
  *  Method to draw a smiley and write a String - WELCOME from CGContextRef
  *

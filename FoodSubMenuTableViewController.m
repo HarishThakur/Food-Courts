@@ -16,6 +16,7 @@
 
 @implementation FoodSubMenuTableViewController
 
+#pragma mark - viewDidLoad
 /**
  *  initialized _restaurantDetailController
  */
@@ -52,6 +53,7 @@
     return [_arrayForFoodSubMenu count];
 }
 
+#pragma mark - cellForRowAtIndexPath
 /**
  *  Method to return TableViewCell with food sub menu menu
  *
@@ -75,6 +77,7 @@
     return cell;
 }
 
+#pragma mark - didSelectRowAtIndexPath
 /**
  *  Method to push this view to SecondViewController 
  *

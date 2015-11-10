@@ -23,6 +23,7 @@
     return self;
 }
 
+#pragma mark - get list of Restaurant
 /**
  *  Method to get list of Restaurant names and images
  *
@@ -75,6 +76,7 @@
     return _arrayForRestaurantDetails;
 }
 
+#pragma mark - get list of Food Menu
 /**
  *  Method to get list of Food Menu and images
  *
@@ -102,6 +104,7 @@
     return _arrayForFoodMenu;
 }
 
+#pragma mark - get list of Food sub Menu - Starter
 /**
  *  Method to get list of Food sub Menu - Starter
  *
@@ -142,6 +145,7 @@
     return _arrayForFoodSubMenu;
 }
 
+#pragma mark - get list of Food sub Menu - Main Course
 /**
  *  Method to get list of Food sub Menu - Main Course
  *
@@ -182,6 +186,7 @@
     return _arrayForFoodSubMenu;
 }
 
+#pragma mark - get list of Food sub Menu - Beverages
 /**
  *  Method to get list of Food sub Menu - Beverages
  *

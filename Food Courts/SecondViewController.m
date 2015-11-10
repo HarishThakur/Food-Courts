@@ -16,6 +16,7 @@
 
 @implementation SecondViewController
 
+#pragma mark - viewDidLoad
 /**
  *  Method to show the selected dish and initialize the tap gesture
  */
@@ -28,6 +29,7 @@
     [self.view addGestureRecognizer:singleFingerTap];
 }
 
+#pragma mark - handleSingleTap method
 /**
  *  Method to fade the view on button click
 */

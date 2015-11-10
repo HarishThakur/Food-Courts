@@ -16,6 +16,7 @@
 
 @implementation RestaurantListTableViewController
 
+#pragma mark - viewDidLoad
 /**
  *  Initialized the controllers
  *  Registered nib for CustomTableViewCell
@@ -52,6 +53,7 @@
     return [_restaurantData count];
 }
 
+#pragma mark - Table view cellForRowAtIndexPath
 /**
  *  Method to return CustomTableViewCell with restuarant names and images
  *
@@ -70,6 +72,7 @@
     return cell;
 }
 
+#pragma mark - Table view didSelectRowAtIndexPath
 /**
  *  Method to push this view to FoodMenuTableViewController
  *

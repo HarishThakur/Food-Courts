@@ -17,7 +17,7 @@
 @end
 
 @implementation TabBarViewController
-
+#pragma mark - viewDidLoad
 /**
  *  Method to set delegate
  */
@@ -32,6 +32,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - tabBarController delegate method
 /**
  *  Method to pop the root view controller
  */
