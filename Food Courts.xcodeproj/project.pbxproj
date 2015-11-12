@@ -16,7 +16,7 @@
 		7D5858551BEA074700A7CA2B /* subway_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D58584D1BEA074700A7CA2B /* subway_logo.png */; };
 		7D5858561BEA074700A7CA2B /* village_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D58584E1BEA074700A7CA2B /* village_logo.png */; };
 		7D58585C1BEA0DE300A7CA2B /* RestaurantListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D58585B1BEA0DE300A7CA2B /* RestaurantListTableViewController.m */; };
-		7D58585F1BEA158600A7CA2B /* RestaurantDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D58585E1BEA158600A7CA2B /* RestaurantDetailController.m */; };
+		7D58585F1BEA158600A7CA2B /* RestaurantDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D58585E1BEA158600A7CA2B /* RestaurantDetail.m */; };
 		7D5858621BEA256E00A7CA2B /* FoodMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5858611BEA256E00A7CA2B /* FoodMenuTableViewController.m */; };
 		7D5858651BEA274600A7CA2B /* FoodMenuInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5858641BEA274600A7CA2B /* FoodMenuInfo.m */; };
 		7D5858691BEB1DBC00A7CA2B /* beverages_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D5858661BEB1DBC00A7CA2B /* beverages_logo.png */; };
@@ -62,8 +62,8 @@
 		7D58584E1BEA074700A7CA2B /* village_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = village_logo.png; sourceTree = "<group>"; };
 		7D58585A1BEA0DE300A7CA2B /* RestaurantListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantListTableViewController.h; sourceTree = "<group>"; };
 		7D58585B1BEA0DE300A7CA2B /* RestaurantListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantListTableViewController.m; sourceTree = "<group>"; };
-		7D58585D1BEA158500A7CA2B /* RestaurantDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantDetailController.h; sourceTree = "<group>"; };
-		7D58585E1BEA158600A7CA2B /* RestaurantDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantDetailController.m; sourceTree = "<group>"; };
+		7D58585D1BEA158500A7CA2B /* RestaurantDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantDetail.h; sourceTree = "<group>"; };
+		7D58585E1BEA158600A7CA2B /* RestaurantDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantDetail.m; sourceTree = "<group>"; };
 		7D5858601BEA256E00A7CA2B /* FoodMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodMenuTableViewController.h; sourceTree = "<group>"; };
 		7D5858611BEA256E00A7CA2B /* FoodMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodMenuTableViewController.m; sourceTree = "<group>"; };
 		7D5858631BEA274600A7CA2B /* FoodMenuInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodMenuInfo.h; sourceTree = "<group>"; };
@@ -222,8 +222,8 @@
 		7DE078761BF1DA91008BC1CE /* Restaurant Name and Menu */ = {
 			isa = PBXGroup;
 			children = (
-				7D58585D1BEA158500A7CA2B /* RestaurantDetailController.h */,
-				7D58585E1BEA158600A7CA2B /* RestaurantDetailController.m */,
+				7D58585D1BEA158500A7CA2B /* RestaurantDetail.h */,
+				7D58585E1BEA158600A7CA2B /* RestaurantDetail.m */,
 			);
 			name = "Restaurant Name and Menu";
 			sourceTree = "<group>";
@@ -488,7 +488,7 @@
 				7D5858761BEB4D1D00A7CA2B /* TabBarViewController.m in Sources */,
 				7D5858621BEA256E00A7CA2B /* FoodMenuTableViewController.m in Sources */,
 				7D5858651BEA274600A7CA2B /* FoodMenuInfo.m in Sources */,
-				7D58585F1BEA158600A7CA2B /* RestaurantDetailController.m in Sources */,
+				7D58585F1BEA158600A7CA2B /* RestaurantDetail.m in Sources */,
 				7DDF16141BF08750009DDCD3 /* Triangle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

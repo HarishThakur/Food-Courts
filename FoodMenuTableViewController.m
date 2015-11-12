@@ -23,8 +23,8 @@
  */
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _restaurantDetailController = [[RestaurantDetailController alloc]init];
-    _foodMenuList = _restaurantDetailController.getFoodMenu;
+    _restaurantDetail = [[RestaurantDetail alloc]init];
+    _foodMenuList = _restaurantDetail.getFoodMenu;
     self.navigationItem.title = @"Food Menu";
     [self.foodMenuTableView registerClass:[CustomTableViewCell class] forCellReuseIdentifier:@"CustomTableViewCell"];
     self.navigationItem.title = NSLocalizedString(@"Food Menu",nil);

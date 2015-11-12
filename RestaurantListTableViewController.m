@@ -23,9 +23,9 @@
  */
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _restaurantDetailController = [[RestaurantDetailController alloc]init];
+    _restaurantDetail = [[RestaurantDetail alloc]init];
     _restaurantInfo = [[RestaurantInfo alloc]init];
-    _restaurantData = _restaurantDetailController.getRestaurantInfo;
+    _restaurantData = _restaurantDetail.getRestaurantInfo;
     [self.restaurantListTableview registerClass:[CustomTableViewCell class] forCellReuseIdentifier:@"CustomTableViewCell"];
     self.navigationItem.title=NSLocalizedString(@"List of Restaurants",nil);
     [self.restaurantListTableview registerNib:[UINib nibWithNibName:NSStringFromClass([CustomTableViewCell class]) bundle:nil] forCellReuseIdentifier:@"CustomTableViewCell"];

@@ -22,18 +22,18 @@
  */
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _restaurantDetailController = [[RestaurantDetailController alloc]init];
+    _restaurantDetail = [[RestaurantDetail alloc]init];
     if (_rowIndex == 0) {
         self.navigationItem.title = NSLocalizedString(@"Starters", @"");
-        _arrayForFoodSubMenu = _restaurantDetailController.getStartersMenu;
+        _arrayForFoodSubMenu = _restaurantDetail.getStartersMenu;
     }
     if (_rowIndex == 1) {
         self.navigationItem.title = NSLocalizedString(@"Main Course", @"");
-        _arrayForFoodSubMenu = _restaurantDetailController.getMainCourseMenu;
+        _arrayForFoodSubMenu = _restaurantDetail.getMainCourseMenu;
     }
     if (_rowIndex == 2) {
         self.navigationItem.title = NSLocalizedString(@"Beverages", @"");
-        _arrayForFoodSubMenu = _restaurantDetailController.getBeveragesMenu;
+        _arrayForFoodSubMenu = _restaurantDetail.getBeveragesMenu;
     }
     self.foodSubMenuTableViewController.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
 }

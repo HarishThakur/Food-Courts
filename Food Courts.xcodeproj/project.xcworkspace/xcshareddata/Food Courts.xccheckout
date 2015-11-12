@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>C238F8ED-67FA-4D94-85F5-29C9B8B53B6B</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Food Courts</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>E7E651E68C28B4455C0E556DC06955ED4D1D662B</key>
 		<string>https://github.com/HarishThakur/Food-Courts.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Food Courts.xcodeproj/project.xcworkspace</string>
+	<string>Food Courts.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>E7E651E68C28B4455C0E556DC06955ED4D1D662B</key>

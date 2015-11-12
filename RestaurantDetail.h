@@ -14,7 +14,7 @@
  *  Properties set for List of restaurant, food menu and sub menu
  *  Method declaration to getRestaurantInfo,getFoodMenu and getFoodSubMenu
  */
-@interface RestaurantDetailController : NSObject
+@interface RestaurantDetail : NSObject
 
 @property (strong,nonatomic) NSMutableArray *arrayForRestaurantDetails;
 @property (strong,nonatomic) NSMutableArray *arrayForFoodMenu;

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "FoodMenuInfo.h"
-#import "RestaurantDetailController.h"
+#import "RestaurantDetail.h"
 #import "TabBarViewController.h"
 #import "RestaurantListTableViewController.h"
 
@@ -18,7 +18,7 @@
 @interface FoodSubMenuTableViewController : UITableViewController
 
 @property FoodMenuInfo *foodMenu;
-@property RestaurantDetailController *restaurantDetailController;
+@property RestaurantDetail *restaurantDetail;
 @property (strong, nonatomic) IBOutlet UITableView *foodSubMenuTableViewController;
 @property int rowIndex;
 

@@ -6,10 +6,10 @@
 //  Copyright (c) 2015 Sourcebits Technologies. All rights reserved.
 //
 
-#import "RestaurantDetailController.h"
+#import "RestaurantDetail.h"
 
 
-@implementation RestaurantDetailController
+@implementation RestaurantDetail
 
 /**
  *  initialized array for list of Restaurants and list of food menu

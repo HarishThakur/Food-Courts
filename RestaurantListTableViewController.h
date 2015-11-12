@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "CustomTableViewCell.h"
 #import "RestaurantInfo.h"
-#import "RestaurantDetailController.h"
+#import "RestaurantDetail.h"
 #import "FoodMenuTableViewController.h"
 
 /**
@@ -18,7 +18,7 @@
 @interface RestaurantListTableViewController : UITableViewController
 
 @property (strong, nonatomic) IBOutlet UITableView *restaurantListTableview;
-@property RestaurantDetailController *restaurantDetailController;
+@property RestaurantDetail *restaurantDetail;
 @property RestaurantInfo *restaurantInfo;
 
 @end
